@@ -1,0 +1,102 @@
+.nav-full {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  padding: 5px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+
+    .humberger-menu {
+      display: none;
+      font-size: 35px;
+    }
+    .nav-info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      transition: 0;
+
+      .nav-list {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 20px;
+        .nav-item {
+          .nav-link {
+            color: #000;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 500;
+            padding: 8px 0;
+            position: relative;
+
+            &::after {
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+              transform: translateX(-50%);
+              content: "";
+              height: 2px;
+              width: 0%;
+              background-color: #000;
+              transition: all ease-out 0.4s;
+            }
+            &:hover {
+              &::after {
+                width: 35%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .nav-container {
+      flex-flow: row wrap;
+      position: relative;
+      .nav-info {
+        display: none;
+        width: 100%;
+        transform: translateY(-100%);
+      }
+      .nav-info.small-device {
+        position: absolute;
+        background-color: #fff;
+        top: 68px;
+        left: 0;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 0;
+        transform: translateY(0%);
+        animation: slideFromTopSmall 0.4s;
+
+        .nav-list {
+          flex-direction: column;
+          justify-content: center;
+        }
+      }
+      .humberger-menu {
+        display: block;
+      }
+    }
+  }
+}
+
+@keyframes slideFromTopSmall {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
