@@ -4,6 +4,10 @@ import "aos/dist/aos.css";
 import Navbar from "./components/Navbar";
 import { useEffect } from "react";
 import Banner from "./components/Banner/Banner";
+import Footer from "./components/Footer/Footer";
+import Testimonial from "./components/Testimonial/Testimonial";
+import NumberStatsSection from "./components/NumberStatsSection/NumberStatsSection";
+import Newsletter from "./components/Newsletter/Newsletter";
 
 function App() {
   useEffect(() => {
@@ -13,7 +17,10 @@ function App() {
     <div className="">
       <Navbar />
       <Banner />
-      <div style={{ padding: "400px 0" }}>home</div>
+      <NumberStatsSection />
+      <Testimonial />
+      <Newsletter />
+      <Footer />
     </div>
   );
 }

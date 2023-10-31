@@ -1,0 +1,80 @@
+.footer-full {
+  background-color: #272727;
+
+  .content-wrapper {
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    padding: 60px 0;
+    gap: 20px;
+    > * {
+      max-width: 290px;
+      width: 100%;
+    }
+
+    .nav-item,
+    .social-links,
+    .social-wrapper {
+      padding: 10px 0;
+      .nav-link {
+        color: white;
+        font-size: 12px;
+        line-height: 14px;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 8px 0;
+
+        > * {
+          font-size: 18px;
+        }
+      }
+      .extra {
+        color: #b5b5b5;
+        font-weight: lighter;
+        font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+        max-width: 290px;
+      }
+    }
+
+    .social-links {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 20px;
+    }
+  }
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    * {
+      color: #b5b5b5;
+    }
+
+    .footer-right {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      gap: 20px;
+      color: #b5b5b5;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .content-wrapper {
+      flex-direction: column;
+      text-align: center;
+      * {
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        gap: 0;
+      }
+    }
+    .footer-bottom {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}
