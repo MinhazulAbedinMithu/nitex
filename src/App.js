@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer";
 import Testimonial from "./components/Testimonial/Testimonial";
 import NumberStatsSection from "./components/NumberStatsSection/NumberStatsSection";
 import Newsletter from "./components/Newsletter/Newsletter";
+import FeaturedMenu from "./components/FeaturedMenu/FeaturedMenu";
 
 function App() {
   useEffect(() => {
@@ -17,6 +18,7 @@ function App() {
     <div className="">
       <Navbar />
       <Banner />
+      <FeaturedMenu />
       <NumberStatsSection />
       <Testimonial />
       <Newsletter />
