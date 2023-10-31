@@ -9,6 +9,7 @@ import Testimonial from "./components/Testimonial/Testimonial";
 import NumberStatsSection from "./components/NumberStatsSection/NumberStatsSection";
 import Newsletter from "./components/Newsletter/Newsletter";
 import FeaturedMenu from "./components/FeaturedMenu/FeaturedMenu";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   useEffect(() => {
@@ -22,6 +23,7 @@ function App() {
       <NumberStatsSection />
       <Testimonial />
       <Newsletter />
+      <Contact />
       <Footer />
     </div>
   );
