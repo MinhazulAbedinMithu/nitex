@@ -10,6 +10,7 @@ import NumberStatsSection from "./components/NumberStatsSection/NumberStatsSecti
 import Newsletter from "./components/Newsletter/Newsletter";
 import FeaturedMenu from "./components/FeaturedMenu/FeaturedMenu";
 import Contact from "./components/Contact/Contact";
+import Sustainable from "./components/Sustainable/Sustainable";
 
 function App() {
   useEffect(() => {
@@ -20,6 +21,7 @@ function App() {
       <Navbar />
       <Banner />
       <FeaturedMenu />
+      <Sustainable />
       <NumberStatsSection />
       <Testimonial />
       <Newsletter />

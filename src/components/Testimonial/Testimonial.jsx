@@ -2,7 +2,6 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { motion } from "framer-motion";
 import "./Testimonial.scss";
 
 // import required modules
@@ -60,16 +59,11 @@ const Testimonial = () => {
         >
           {testimonialData.map((testimonial) => (
             <SwiperSlide key={testimonial.id} className="slide">
-              <motion.div
-                className="testimonial-card"
-                variants={cardVariants}
-                initial="hidden"
-                animate="visible"
-              >
+              <div data-aos="fade-up" className="testimonial-card">
                 <img src={testimonial.image} alt={testimonial.name} />
                 <h3>{testimonial.name}</h3>
                 <p>{testimonial.feedback}</p>
-              </motion.div>
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>

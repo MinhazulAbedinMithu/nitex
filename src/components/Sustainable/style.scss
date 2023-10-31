@@ -1,0 +1,142 @@
+// .steps-section {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-between;
+//   align-items: center;
+//   width: 100%;
+//   margin: 0 auto;
+//   padding: 20px 0;
+//   position: relative;
+// }
+
+// .step {
+//   max-width: 350px;
+//   width: calc(100% - 20px);
+//   text-align: center;
+//   position: relative;
+//   margin-bottom: 20px;
+//   position: relative;
+//   ::after {
+//     content: "";
+//     position: absolute;
+//     top: 50%; /* Start from the middle of the first step */
+//     left: calc(50% + 25px); /* Adjust this value to match your step icon size */
+//     transform: translateY(-50%);
+//     width: 2px;
+//     height: calc(100% - 30px); /* End before the last step */
+//     background: repeating-linear-gradient(
+//       to bottom,
+//       #ccc,
+//       #ccc 5px,
+//       transparent 5px,
+//       transparent 10px
+//     );
+//   }
+
+//   img {
+//     width: 200px;
+//     height: 200px;
+//   }
+// }
+
+// .step h3 {
+//   margin: 20px 0;
+// }
+
+// .step-icon {
+//   width: 50px;
+//   height: 50px;
+//   background-color: #3498db; /* Set the background color for the rounded icon */
+//   border-radius: 50%; /* Create a circle */
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   margin: 0 auto;
+//   position: relative;
+// }
+
+// .connector {
+//   position: absolute;
+//   top: 50%; /* Start from the middle of the first step */
+//   left: calc(50% + 25px); /* Adjust this value to match your step icon size */
+//   transform: translateY(-50%);
+//   width: 2px;
+//   height: calc(100% - 30px); /* End before the last step */
+//   background: repeating-linear-gradient(
+//     to bottom,
+//     #ccc,
+//     #ccc 5px,
+//     transparent 5px,
+//     transparent 10px
+//   );
+// }
+.sus-full {
+  padding: 100px 0;
+}
+.steps-section {
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 2px dashed rgb(199, 199, 199);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  h2 {
+    font-size: 30px;
+  }
+  gap: 20px;
+  text-align: center;
+  > h2,
+  p {
+    max-width: 350px;
+    width: 80%;
+  }
+}
+
+.step {
+  position: absolute;
+  text-align: center;
+
+  img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  h3 {
+    color: rgb(156, 7, 255);
+  }
+}
+.phone {
+  display: none;
+}
+@media only screen and (max-width: 780px) {
+  .phone {
+    display: block;
+    text-align: center;
+
+    .steps-section-phone {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 40px;
+      padding-top: 20px;
+
+      .st {
+        text-align: center;
+        img {
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+  .steps-section {
+    display: none;
+  }
+}
