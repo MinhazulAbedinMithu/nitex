@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Job Task: Landing Page | Nitex
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### `Live : https://nitexx.vercel.app/`
 
-## Available Scripts
+## Sections | Components:
 
-In the project directory, you can run:
+- #### `Navbar`
+  - Some navigation links and logo.
+- #### `Banner`
+  - From concept to delivery contents to create a slider with five slides. That slider build with Swiper.js [https://swiperjs.com/]. It's very easily handlable.
+- #### `FeaturedMenu`
+  - It's a section that contain 4 cards for some important functionalities.
+- #### `SpreadLove`
+  - showed a process of preparing the best quality fabric dress from wealthy cottons.
+  - This section is in circle view in Desktop and in small device it's vartically showed.
+- #### `NumberStatsSection`
+  - In this section has 4 items for showing some information to couting up. It's done with a library - react-countup
+- #### `Testimonial`
+  - It's a customer feedback items slider. It's also done with Swiper slider.
+- #### `Newsletter`
+  - email typed input field for updates email.
+- #### `Contact`
+  - Contact us section for sending message.
+- #### `Footer`
+  - Some information with navigation links and social links icons.
 
-### `npm start`
+## Packages:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- #### react-icons
+  - It's a icons library.
+- #### react-countup
+- #### sass
+  - For writing Scss.
+- #### swiper
+  - For building Slider.
+- ### aos:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  - Creating Scroll anication.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- ##### In this task no need to use routing. that's why use ancor tag <a>. Otherwise In react application we need to use react-router-dom for routing.

@@ -1,7 +1,7 @@
 import "./App.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import { useEffect } from "react";
 import Banner from "./components/Banner/Banner";
 import Footer from "./components/Footer/Footer";
@@ -10,7 +10,7 @@ import NumberStatsSection from "./components/NumberStatsSection/NumberStatsSecti
 import Newsletter from "./components/Newsletter/Newsletter";
 import FeaturedMenu from "./components/FeaturedMenu/FeaturedMenu";
 import Contact from "./components/Contact/Contact";
-import Sustainable from "./components/Sustainable/Sustainable";
+import SpreadLove from "./components/SpreadLove/SpreadLove";
 
 function App() {
   useEffect(() => {
@@ -21,7 +21,7 @@ function App() {
       <Navbar />
       <Banner />
       <FeaturedMenu />
-      <Sustainable />
+      <SpreadLove />
       <NumberStatsSection />
       <Testimonial />
       <Newsletter />

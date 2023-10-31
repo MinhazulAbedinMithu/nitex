@@ -29,7 +29,7 @@ const stepsData = [
   },
 ];
 
-const Sustainable = () => {
+const SpreadLove = () => {
   return (
     <div className="sus-full">
       <div className="container">
@@ -96,4 +96,4 @@ const Sustainable = () => {
   );
 };
 
-export default Sustainable;
+export default SpreadLove;
