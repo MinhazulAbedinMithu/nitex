@@ -1,6 +1,6 @@
 # Job Task: Landing Page | Nitex
 
-### `Live : https://nitexx.vercel.app/`
+### `[Live : https://nitexx.vercel.app/]`
 
 ## Sections | Components:
 
